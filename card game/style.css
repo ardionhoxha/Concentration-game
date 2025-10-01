@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  text-align: center;
+  padding: 20px;
+  background-image: url("https://t4.ftcdn.net/jpg/02/67/10/31/360_F_267103158_QTPpB2GxYh8RZBL4X9XL42SM7jiZ5yXL.jpg");
+}
+
+h1 {
+  color: #ffffff;
+}
+
+#game-board {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.card {
+  width: 100px;
+  height: 100px;
+  background-color: #ffea00;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 8px;
+  text-transform: uppercase;
+}
+
+.card.matched {
+  background-color: #28a745;
+  cursor: default;
+}
+
+.card.flipped {
+  background-color: #ff8000;
+  color: #333;
+  cursor: default;
+}
